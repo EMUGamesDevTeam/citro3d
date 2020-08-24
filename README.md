@@ -8,6 +8,10 @@ citro3d can be built and installed using the following command:
 
     make install
 
+## PRIMA di installare:
+modifica il file `/opt/devkitpro/libctru/include/3ds/gfx.h` (se sei su linux, altrimenti non ricordo da dove si prende) e cerca `DEPRECATED void gfxConfigScreen(gfxScreen_t scr, bool immediate);` e rimuovi la parte con scritto `DEPRECATED `, in modo che sia `void gfxConfigScreen(gfxScreen_t scr, bool immediate);`.
+
+
 # License
 
   This software is provided 'as-is', without any express or implied
